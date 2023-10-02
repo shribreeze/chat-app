@@ -12,7 +12,6 @@ import ChatLoading from '../ChatLoading';
 import UserListItem from '../UserAvatar/UserListItem';
 import axios from "axios";
 
-// import { accessChat } from '../../../../backend/controllers/chatControllers';
 
 const SideDrawer = () => {
     const [search, setSearch] = useState("");
@@ -21,9 +20,10 @@ const SideDrawer = () => {
   const [loadingChat, setLoadingChat] = useState(false);
 
   const { user, setSelectedChat } = ChatState();
-  const history = useHistory();
+
   const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const history = useHistory();
 
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");

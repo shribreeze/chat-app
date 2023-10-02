@@ -1,0 +1,12 @@
+.profile-modalBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-modalHead {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}

@@ -13,6 +13,7 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
+import './profile.css'
 
 const ProfileModal = ({ user, children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,16 +28,11 @@ const ProfileModal = ({ user, children }) => {
       <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
         <ModalContent h="410px">
-          <ModalHeader
-            fontSize="40px"
-            fontFamily="Work sans"
-            d="flex"
-            justifyContent="center"
-          >
+          <ModalHeader className="profile-modalHead">
             {user.name}
           </ModalHeader>
           <ModalCloseButton />
-          <ModalBody
+          <ModalBody className="profile-modalBody"
             d="flex"
             flexDir="column"
             alignItems="center"

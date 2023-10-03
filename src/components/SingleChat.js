@@ -1,4 +1,5 @@
 import React from 'react'
+import './SingleChat.css'
 import { ChatState } from '../Context/ChatProvider';
 import { Box, FormControl, IconButton, Input, Spinner, Text } from '@chakra-ui/react';
 import { ArrowBackIcon } from '@chakra-ui/icons';
@@ -49,16 +50,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 </>
               ))}
           </Text>
-          <Box
-            d="flex"
-            flexDir="column"
-            justifyContent="flex-end"
-            p={3}
-            bg="#E8E8E8"
-            w="100%"
-            h="90%"
+          <Box className='SingleChatBox'
             borderRadius="lg"
-            overflowY="hidden"
           >
               {/* <Input
                 variant="filled"

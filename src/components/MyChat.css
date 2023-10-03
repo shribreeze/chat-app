@@ -1,10 +1,10 @@
-.MyChatBox {
+/* .MyChatBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 10px;
     border-width: 1px;
   
     @media (max-width: 767px) {
@@ -17,12 +17,12 @@
       }
   }
   
-  /* @media (min-width: 768px) {
+  @media (min-width: 768px) {
     .MyChatBox {
       display: flex;
       width: 31%;
     }
-  } */
+  }
 
 .MyChatBox2 {
     padding-bottom: 3px;
@@ -65,4 +65,4 @@
     border-radius: 4px;
     overflow-y: hidden;
   }
-
+ */

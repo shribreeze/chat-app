@@ -5,19 +5,4 @@
     scrollbar-width: none;
   }
 
-  /* .ChatboxBox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3px;
-    background-color: white;
-    width: 100%;
-    border-radius: 5px;
-    border-width: 1px;
-  
-    @media (min-width: 768px) {
-      width: 68%;
-    }
-  } */
-
   

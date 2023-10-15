@@ -4,7 +4,7 @@ import './UserList.css'
 import { ChatState } from "../../Context/ChatProvider";
 
 const UserListItem = ({ user, handleFunction }) => {
-//   const { user } = ChatState();
+  // const { user } = ChatState();
 
   return (
     <Box className="UserListBox"

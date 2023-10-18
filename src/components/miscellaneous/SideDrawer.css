@@ -1,18 +1,12 @@
-/* .sideDrawer {
-    display: flex;
-    justify-content: "space-between";
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    border-width: 5px;
-} */
-
 .sideDrawer {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #b3ccfe;
     width: 100%;
     padding: 5px;
     border-width: 5px;
 }
 
+#sideDrawSearch {
+    background-color: #b3ccfe;
+}

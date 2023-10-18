@@ -11,6 +11,8 @@ import axios from 'axios';
 import ScrollableChat from './ScrollableChat';
 import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
+import animationSvg from "../animations/chatboxSVG.json";
+
 
 
 const ENDPOINT = "http://localhost:5000";
@@ -36,6 +38,11 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     },
   };
 
+  const Chatboxsvg ={
+    loop: true,
+    autoplay: true,
+    animationData: animationSvg,
+  };
   const { selectedChat, setSelectedChat, user, notification, setNotification } = ChatState();
   
 
@@ -238,7 +245,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               )}
               <Input
                 variant="filled"
-                bg="#E0E0E0"
+                bg="#e1ebff"
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={typingHandler}
@@ -249,9 +256,11 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       ) : (
         // to get socket.io on same page
         <Box display="flex" alignItems="center" justifyContent="center" h="100%">
-          <Text fontSize="3xl" pb={3} fontFamily="Work sans">
-            Click on a user to start chatting
-          </Text>
+        <Lottie
+          options={Chatboxsvg}
+          width={700}
+          style={{ marginBottom: 15, marginLeft: 0 }}
+        />
         </Box>
       )}
     </>

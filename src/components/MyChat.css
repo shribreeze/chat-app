@@ -66,3 +66,12 @@
     overflow-y: hidden;
   }
  */
+
+ #chatname{
+  font-weight: 600;
+ }
+
+ #chatText {
+  color: white;
+ }
+ 

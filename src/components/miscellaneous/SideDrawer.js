@@ -3,7 +3,7 @@ import './SideDrawer.css'
 import { Box, Text } from "@chakra-ui/layout";
 import { BellIcon, ChevronDownIcon} from "@chakra-ui/icons"
 import { Tooltip } from "@chakra-ui/tooltip";
-import { Avatar, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Input, Spinner, useToast } from '@chakra-ui/react';
+import { Avatar, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, Input, Spinner, useToast, Image } from '@chakra-ui/react';
 import { ChatState } from '../../Context/ChatProvider';
 import ProfileModal from './ProfileModal';
 import { useHistory } from 'react-router-dom';
@@ -13,6 +13,7 @@ import UserListItem from '../UserAvatar/UserListItem';
 import axios from "axios";
 import NotificationBadge, { Effect } from "react-notification-badge";
 import { getSender } from '../../config/ChatLogic';
+import './tantu.png'
 
 
 const SideDrawer = () => {
@@ -109,9 +110,16 @@ const SideDrawer = () => {
                 </Button>
             </Tooltip>
 
-            <Text fontSize="2xl" fontFamily="Work sans">
-                chittrr
-            </Text>
+            {/* <Text fontSize="2xl" fontFamily="Work sans">
+                LogAntu
+            </Text> */}
+            {/* <Img src='./tantu.png' alt='logo'/> */}
+            <Image
+    width={170}
+    height={35}
+    src='https://github.com/shribreeze/pic-url/blob/main/pic-url/tantu.png?raw=true'
+    alt='logo'
+  />
             <div>
                 <Menu>
                     <MenuButton p={1}>
@@ -161,7 +169,7 @@ const SideDrawer = () => {
         <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
+          <DrawerHeader id='sideDrawSearch' borderBottomWidth="1px">Search Users</DrawerHeader>
           <DrawerBody>
             <Box display="flex" pb={2}>
               <Input

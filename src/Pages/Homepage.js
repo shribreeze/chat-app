@@ -27,7 +27,13 @@ function Homepage() {
         borderRadius="lg"
         borderWidth="1px"
         >
-            <Text fontSize="4xl" color='white' fontFamily="Work sans">LogAntu</Text>
+            {/* <Text fontSize="4xl" color='white' fontFamily="Work sans">LogAntu</Text> */}
+            <Image
+    width={170}
+    height={35}
+    src='https://github.com/shribreeze/pic-url/blob/main/pic-url/tantu.png?raw=true'
+    alt='logo'
+  />
         </Box>
         <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px" id='homeBox'>
         <Tabs isFitted variant="soft-rounded">

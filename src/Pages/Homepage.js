@@ -1,4 +1,4 @@
-import { Box, Container, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
+import { Box, Container, Image, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Login from '../components/Authentication/Login'

@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import Login from '../components/Authentication/Login'
 import Signup from '../components/Authentication/Signup'
+import './ChatPage.css';
 
 
 function Homepage() {
@@ -20,15 +21,15 @@ function Homepage() {
         display="flex"
         justifyContent="center"
         p={3}
-        bg="#059999"
+        bg="#266efd"
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
         >
-            <Text fontSize="4xl" fontFamily="Work sans">LogAntu</Text>
+            <Text fontSize="4xl" color='white' fontFamily="Work sans">LogAntu</Text>
         </Box>
-        <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+        <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px" id='homeBox'>
         <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
             <Tab>Login</Tab>

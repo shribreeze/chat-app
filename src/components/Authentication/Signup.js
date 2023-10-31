@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import './signup.css';
 
 const Signup = () => {
 

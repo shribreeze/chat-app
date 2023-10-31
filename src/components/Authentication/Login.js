@@ -5,6 +5,7 @@ import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
+import './login.css';
 
 const Login = () => { 
 
@@ -70,7 +71,7 @@ const Login = () => {
   };
 
   return (
-    <VStack spacing="10px">
+    <VStack spacing="10px" id='logVStack' colorScheme='red'>
       <FormControl id="email" isRequired>
         <FormLabel>Email Address</FormLabel>
         <Input

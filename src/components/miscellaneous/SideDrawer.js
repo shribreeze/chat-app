@@ -111,15 +111,15 @@ const SideDrawer = () => {
             </Tooltip>
 
             {/* <Text fontSize="2xl" fontFamily="Work sans">
-                LogAntu
+                Tantu
             </Text> */}
-            {/* <Img src='./tantu.png' alt='logo'/> */}
-            <Image
-    width={170}
-    height={35}
-    src='https://github.com/shribreeze/pic-url/blob/main/pic-url/tantu.png?raw=true'
-    alt='logo'
-  />
+            {/* <Img src={tantu.png} alt='logo'/> */}
+            <Image className='logoPic'
+                // width={170}
+                // height={35}
+                src='https://i.ibb.co/7YTrZx3/tantu.png'
+                alt='logo'
+              />
             <div>
                 <Menu>
                     <MenuButton p={1}>

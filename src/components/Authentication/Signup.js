@@ -84,6 +84,17 @@ const Signup = () => {
       });
       setPicLoading(false);
     }
+      // Refresh the page
+    window.location.reload();
+
+    // Show a toast message to the user
+    toast({
+      title: "Refreshing page...",
+      status: "info",
+      duration: 5000,
+      isClosable: true,
+      position: "bottom",
+    });
   };
 
 
